@@ -2,6 +2,7 @@
   --main-color: #2196f3;
   --secondary-color: #f5f4fa;
   --box-color: #2f303a;
+  --stroke-color: #ececec;
   --main-text-color: #212121;
   --secondary-text-color: #757575;
   --white-color: #ffffff;
@@ -18,7 +19,16 @@ body {
   background-color: var(--white-color);
 }
 
+.container {
+  margin: 0 auto;
+  width: 1200px;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
 .list {
+  margin: 0;
+  padding: 0;
   list-style: none;
 }
 
@@ -38,7 +48,19 @@ body {
 /* СТУДІЯ */
 /* хедер */
 
+.header {
+  border-bottom: 1px solid var(--stroke-color);
+  border-top: 1px solid transparent;
+}
+
+.header > .container {
+  min-height: 80px;
+  display: flex;
+  align-items: center;
+}
+
 .logo {
+  margin-right: 93px;
   color: var(--black-color);
   font-family: 'Raleway', sans-serif;
   font-size: 26px;
@@ -49,22 +71,38 @@ body {
   color: var(--main-color);
 }
 
+.address-links {
+  margin-left: auto;
+}
+
+.nav-links,
+.address-links {
+  display: flex;
+}
+
 .nav-links .link,
-.adress-links .link {
+.address-links .link {
+  padding-top: 31px;
+  padding-bottom: 31px;
   font-weight: 500;
   line-height: 1.2;
   letter-spacing: 0.02em;
 }
 
-.adress-links .link {
+.address-links .link {
   color: var(--secondary-text-color);
 }
 
 .nav-links .link:hover,
 .nav-links .link:focus,
-.adress-links .link:hover,
-.adress-links .link:focus {
+.address-links .link:hover,
+.address-links .link:focus {
   color: var(--main-color);
+}
+
+.nav-link + .nav-link,
+.address-link + .address-link {
+  margin-left: 50px;
 }
 
 /* мейн */

@@ -8,6 +8,12 @@
 
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
+    />
+
     <link
       href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
       rel="stylesheet"
@@ -15,19 +21,25 @@
     <link rel="stylesheet" href="./css/styles.css" />
   </head>
   <body>
-    <header>
-      <nav>
+    <header class="header">
+      <div class="container">
         <a href="#" class="logo"><span class="logo-web">Web</span>Studio</a>
-        <ul class="nav-links list">
-          <li><a class="link active" href="./index.html">Студія</a></li>
-          <li><a class="link" href="./portfolio.html">Портфоліо</a></li>
-          <li><a class="link" href="#">Контакти</a></li>
+        <nav>
+          <ul class="nav-links list">
+            <li class="nav-link"><a class="link" href="./portfolio.html">Портфоліо</a></li>
+            <li class="nav-link"><a class="link active" href="./index.html">Студія</a></li>
+            <li class="nav-link"><a class="link" href="#">Контакти</a></li>
+          </ul>
+        </nav>
+        <ul class="address-links list">
+          <li class="address-link">
+            <a class="link" href="mailto:info@devstudio.com">info@devstudio.com</a>
+          </li>
+          <li class="address-link">
+            <a class="link" href="tel:+380961111111">+38 096 111 11 11</a>
+          </li>
         </ul>
-      </nav>
-      <ul class="adress-links list">
-        <li><a class="link" href="mailto:info@devstudio.com">info@devstudio.com</a></li>
-        <li><a class="link" href="tel:+380961111111">+38 096 111 11 11</a></li>
-      </ul>
+      </div>
     </header>
     <main>
       <section class="banner">
