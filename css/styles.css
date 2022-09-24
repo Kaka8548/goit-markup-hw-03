@@ -83,7 +83,6 @@ img {
 }
 
 .header .container {
-  min-height: 78px;
   display: flex;
   align-items: center;
 }
@@ -115,8 +114,9 @@ img {
 
 .nav-links .link,
 .address-links .link {
-  padding-top: 31px;
-  padding-bottom: 31px;
+  display: inline-block;
+  padding-top: 32px;
+  padding-bottom: 32px;
   font-weight: 500;
   line-height: 1.2;
   letter-spacing: 0.02em;
@@ -226,6 +226,10 @@ img {
   margin-left: 30px;
 }
 
+.work-img {
+  width: calc((100% - 60px) / 3);
+}
+
 /* Команда */
 
 .team {
@@ -233,7 +237,7 @@ img {
 }
 
 .team .team-member {
-  width: 270px;
+  width: calc((100% - 90px) / 4);
   background-color: var(--white-color);
   border-radius: 0px 0px 4px 4px;
   box-shadow: var(--img-card-shadow);
@@ -352,7 +356,7 @@ img {
 }
 
 .projects .project {
-  width: 370px;
+  width: calc((100% - 60px) / 3);
 }
 
 .project:not(:nth-of-type(3n)) {
